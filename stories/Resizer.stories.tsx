@@ -52,7 +52,9 @@ Basic.args = {
   ),
 };
 
-const FewTemplate: Story<typeof Resizer & StoryArgsProps> = ({ controls }) => {
+const SeveralTemplate: Story<typeof Resizer & StoryArgsProps> = ({
+  controls,
+}) => {
   const texts = [
     "Build a resizer component as a standalone library (importable by third-party applications) and create an example that will use it.",
     "The resizer component should have handles, which a user can interact with. The user can increase or decrease the width or height of a container wrapping any child component",
@@ -69,8 +71,8 @@ const FewTemplate: Story<typeof Resizer & StoryArgsProps> = ({ controls }) => {
   );
 };
 
-export const Few = FewTemplate.bind({});
-Few.args = {};
+export const Several = SeveralTemplate.bind({});
+Several.args = {};
 
 const SidebarTemplate: Story<typeof Resizer & StoryArgsProps> = ({
   controls,

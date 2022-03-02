@@ -1,17 +1,20 @@
 # @khanenyao/rszr
 
-RSZR - is a zero dependencies resize component. User can interact with with handles (controls) for increasing or decreasing the width or height of a container. As child can be any component.
+RSZR - is zero dependencies resizer component. Users can interact with the handles (controls) for increasing or decreasing the width or height of a container. Any component can be used as a child component.
 
 Implemented with [React](https://reactjs.org) & [TypeScript](https://www.typescriptlang.org).
 
 - [Install](#install)
 - [Resizer props](#resizer-props)
-- [Code examples](#code-examples)
-- - [Default](#default)
-- - [Manage controls](#manage-controls)
+- [Rxamples](#examples)
+- - [Demo](#demo)
+- - [Controls](#controls)
+- - [Styling](#styling)
+- - [Sidebar](#sidebar)
 - [Development](#development)
 - - [Storybook](#storybook)
 - - [Build](#build)
+- [License](#license)
 
 ## Install
 
@@ -26,7 +29,7 @@ $ yarn add @khanenyao/rszr
 | children | ReactNode            | -        | -                                                                                      |
 | controls | ResizerControlType[] | -        | [ResizerControlType.RIGHT, ResizerControlType.RIGHT_BOTTOM, ResizerControlType.BOTTOM] |
 
-## Code examples
+## Examples
 
 ### Demo
 
@@ -58,7 +61,7 @@ export default function App() {
 }
 ```
 
-### Controls demo
+### Controls
 
 You can manage visible `controls`. By default all `controls` are visible.
 
@@ -90,7 +93,7 @@ export default function App() {
 }
 ```
 
-### Styling demo
+### Styling
 
 [codesandbox](https://codesandbox.io/s/khanenyao-rszr-styling-demo-pjxzyr)
 
@@ -123,7 +126,7 @@ export default function App() {
 }
 ```
 
-### Sidebar demo
+### Sidebar
 
 [codesandbox](https://codesandbox.io/s/khanenyao-rszr-sidebar-demo-onjgp7)
 
@@ -159,7 +162,7 @@ export default function App() {
 
 ### Storybook
 
-For fast and comfortable developing this project includes Storybook.
+For fast and comfortable development this project includes a Storybook.
 
 ```bash
 $ yarn start storybook
@@ -170,3 +173,7 @@ $ yarn start storybook
 ```bash
 $ yarn rollup
 ```
+
+## License
+
+[MIT](LICENSE.md)
